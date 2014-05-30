@@ -8,7 +8,7 @@ define([
     'use strict';
 
     var initialize = function () {
-      var appModel = new AppModel();
+      var appModel = new AppModel({ id:1 });
 
       var appView = new AppView({model: appModel});
       $('body').append(appView.render().el);
@@ -16,8 +16,10 @@ define([
       var router = new Router(appView);
       Backbone.history.start();
 
+      appModel.fetch();
+
       window.debug = {
-        
+        settings: appModel
       }
 
       /*var daysCollection = new DaysCollection([], {
