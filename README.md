@@ -7,4 +7,6 @@ A course on developing a JS application using Backbone, Underscore, Bootstrap, R
 
 **need to update code to work with newest versions of Backbone and Underscore**
 
-*This has been extremely fun*
+*This has been extremely fun, working with requirejs and backbone*
+
+###FTW Backbone is awesome for RESTapi's
