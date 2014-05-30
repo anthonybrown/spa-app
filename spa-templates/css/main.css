@@ -8,6 +8,7 @@ body {
 #app-view {
   padding: 1em 0 0 0;
   min-width: 320px;
+  background-color: rgba(203, 215, 198, .9);
 }
 
 #header {
