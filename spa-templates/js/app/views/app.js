@@ -79,9 +79,7 @@ define([
         this.$('.page-view').hide();
         this.$('#page-'+page).show();
         this.$('#nav-' + page).addClass('active');
-
-        this.model.set('welcomeMessage', 'Welcome to the ' + page + ' page');
-      }
+    }
 
   });
 

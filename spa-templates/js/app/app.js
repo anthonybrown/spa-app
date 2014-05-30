@@ -2,10 +2,7 @@ define([
       'app/views/app'
     , 'app/routers/router'
     , 'app/models/app'
-    , 'app/collections/days'
-    , 'app/collections/places'
-  ]
-, function (AppView, Router, AppModel, DaysCollection, PlacesCollection) {
+], function (AppView, Router, AppModel) {
     'use strict';
 
     var initialize = function () {
@@ -19,26 +16,6 @@ define([
 
       appModel.fetch();
 
-      var placesCollection = new PlacesCollection([]);
-      placesCollection.fetch();
-
-      window.debug = {
-          settings: appModel
-        , places: placesCollection
-      }
-
-      /*var daysCollection = new DaysCollection([], {
-          url: 'http://api.wunderground.com/api/65c6079471b5de45/forecast/q/MA/Boston.json'
-      });
-
-      daysCollection.fetch({
-          success: function (collection, response, options) {
-            console.log(collection, response);
-          }
-        , error: function (collection, response, options) {
-            console.log('error');
-        }
-      });*/
 
     };
 
