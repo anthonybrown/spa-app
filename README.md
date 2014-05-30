@@ -6,3 +6,5 @@ A course on developing a JS application using Backbone, Underscore, Bootstrap, R
 > Wunderground weather API
 
 **need to update code to work with newest versions of Backbone and Underscore**
+
+*This has been extremely fun*
