@@ -7,12 +7,15 @@ body {
 
 #app-view {
   padding: 1em 0 0 0;
+  min-width: 320px;
 }
 
 #header {
   marginL 0 1em 1em 1em;
 }
 
+#content {
+}
 
 .page-view {
   padding: 1.75em 0;
@@ -28,6 +31,7 @@ body {
 #places-list .panel {
   width: 30%;
   max-width: 300px;
+  min-width: 200px;
   float: left;
   margin-right: 1em;
 }
