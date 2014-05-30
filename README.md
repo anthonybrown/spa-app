@@ -9,4 +9,4 @@ A course on developing a JS application using Backbone, Underscore, Bootstrap, R
 
 *This has been extremely fun, working with requirejs and backbone*
 
-###FTW Backbone is awesome for RESTapi's
+####FTW Backbone is awesome for RESTapi's
