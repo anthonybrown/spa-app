@@ -38,7 +38,7 @@ define([
               placesHtml.push(Templates['place'](element.toJSON()));
             });
 
-            this.$placeList.html(placesHtml.join(''));
+            this.$placesList.html(placesHtml.join(''));
 
           } else {
               this.$placeList.html('Sorry, there are no places to display, please add some');
