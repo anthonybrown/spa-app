@@ -1,6 +1,17 @@
 /** ====================================================================================/
- *  Weather Watcher Styles
+ *  Weather Watcher Global Styles
  * ====================================================================================*/
+::selection {
+  color:#f7f7f7;
+  background: hotpink;
+  text-shadow: none;
+}
+::moz-selection {
+  background: hotpink;
+  color: white;
+  text-shadow: none;
+}
+
 body {
   font: 1.8em/1.7 'Ubuntu', Helvetica, Arial, sans-serif;
   padding: 2em;
@@ -38,3 +49,10 @@ body {
   float: left;
   margin-right: 1.7em;
 }
+
+/** ====================================================================================/
+ *  Misc Styles
+ * ====================================================================================*/
+
+
+
