@@ -8,13 +8,15 @@ define([
     'use strict';
 
     var initialize = function () {
-      var appModel = new AppModel({id: 1});
+      var appModel = new AppModel({ id:1 });
 
       var appView = new AppView({model: appModel});
       $('body').append(appView.render().el);
 
       var router = new Router(appView);
       Backbone.history.start();
+
+      appModel.fetch();
 
       window.debug = {
         settings: appModel
