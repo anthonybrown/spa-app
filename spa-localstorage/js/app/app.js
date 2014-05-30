@@ -17,7 +17,7 @@ define([
       Backbone.history.start();
 
       window.debug = {
-        
+        settings: appModel
       }
 
       /*var daysCollection = new DaysCollection([], {
