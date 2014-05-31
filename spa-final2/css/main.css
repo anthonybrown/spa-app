@@ -1,0 +1,87 @@
+/** ====================================================================================/
+ *  Weather Watcher Global Styles
+ * ====================================================================================*/
+::selection {
+  color:#f7f7f7;
+  background: hotpink;
+  text-shadow: none;
+}
+::moz-selection {
+  background: hotpink;
+  color: white;
+  text-shadow: none;
+}
+
+body {
+  font: 1.8em/1.7 'Ubuntu', Helvetica, Arial, sans-serif;
+  padding: 2em;
+  color: #444;
+}
+
+#app-view {
+  padding: 1.7em 0 0 0;
+  min-width: 320px;
+  background-color: rgba(203, 215, 198, .9);
+}
+
+#header {
+  marginL 0 1em 1em 1em;
+}
+
+#content {
+}
+
+.page-view {
+  padding: 1.75em 0;
+}
+  .page-view > h3 {
+    margin-left: 2em;
+  }
+
+
+
+/** ====================================================================================/
+ *  Misc Styles
+ * ====================================================================================*/
+
+.panel-info > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image: linear-gradient(to bottom, #30AFEE 0%, #0E6694 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+  background-repeat: repeat-x;
+}
+
+.panel-info {
+  border-color: rgba(17, 126, 131, 0.48);
+}
+
+.panel-body {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e7e7e7 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e7e7e7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+  background-repeat: repeat-x;
+  color: #333;
+  text-shadow: -1px -1px 0 #FFF;
+}
+
+.panel-title {
+  color: #f7f7f7;
+  text-shadow: -1px -1px 0 #06366d;
+}
+
+#places-list {
+  padding: 2em;
+}
+
+.panel {
+  width: 30%;
+  max-width: 400px;
+  min-width: 220px;
+  float: left;
+  margin-right: 1.7em;
+}
+/* last-child is not working as expected */
+  /*.panel:last-child {
+    margin-right: 0;
+  }*/
+
