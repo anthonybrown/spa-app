@@ -4,7 +4,7 @@ define([
   , 'backbone'
   , 'app/templates'
   , 'app/collections/days'
-], function ($, _, Backbone, Templates, DaysCollecton) {
+], function ($, _, Backbone, Templates, DaysCollection) {
     'use strict';
 
     var PlaceView = Backbone.View.extend({
@@ -44,11 +44,15 @@ define([
     }
     , renderDays: function () {
           var daysHtml = [];
-
+          this.collection.each(function (element, index, list) {
+              daysHtml.push(
+                  Templates['day'](element.toJSON())
+              );
+          });
           this.$bodyEl.html(daysHtml.join(''));
     }
 
   });
 
-    return AboutView;
+    return PlaceView;
 });

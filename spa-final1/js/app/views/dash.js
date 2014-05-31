@@ -3,8 +3,8 @@ define([
   , 'underscore'
   , 'backbone'
   , 'app/collections/places'
-  , 'app/templates'
-], function ($, _, Backbone, PlacesCollection, Templates) {
+  , 'app/views/place'
+], function ($, _, Backbone, PlacesCollection, PlaceView) {
     'use strict';
 
     var DashView = Backbone.View.extend({
@@ -14,6 +14,8 @@ define([
         , '<div id="places-list" class="clearfix">Loading...</div>'
         , '<div id="dash-buttons"></div>'
       ].join('')
+
+      , views: []
 
       , initialize: function () {
           this.$el.html(this.html);
@@ -30,21 +32,35 @@ define([
       }
 
       , render: function () {
+          var that = this;
+          this.cleanUp();
+
           if (this.collection.length) {
 
-            var placesHtml = [];
-
             this.collection.each(function (element, index, list) {
-              placesHtml.push(Templates['place'](element.toJSON()));
-            });
+                var place = new PlaceView({
+                    model: element
+                  , id: ['place-', element.get('countryCode')
+                  , '-'
+                  , element.get('name')].join('')
+                });
 
-            this.$placesList.html(placesHtml.join(''));
+                that.$placesList.append(place.render().el);
+                that.views.push(place);
+            });
 
           } else {
               this.$placesList.html('Sorry, there are no places to display, please add some');
           }
 
           return this;
+      }
+      , cleanUp: function () {
+          for (var i = 0; i < this.views.length; i++) {
+            this.views[i].remove();
+          }
+          this.views.length = 0;
+          this.$placesList.html();
       }
 
     });
