@@ -38,17 +38,7 @@ body {
     margin-left: 2em;
   }
 
-#places-list {
-  padding: 2em;
-}
 
-#places-list .panel {
-  width: 30%;
-  max-width: 400px;
-  min-width: 220px;
-  float: left;
-  margin-right: 1.7em;
-}
 
 /** ====================================================================================/
  *  Misc Styles
@@ -79,4 +69,19 @@ body {
   text-shadow: -1px -1px 0 #06366d;
 }
 
+#places-list {
+  padding: 2em;
+}
+
+.panel {
+  width: 30%;
+  max-width: 400px;
+  min-width: 220px;
+  float: left;
+  margin-right: 1.7em;
+}
+/* last-child is not working as expected */
+  /*.panel:last-child {
+    margin-right: 0;
+  }*/
 
