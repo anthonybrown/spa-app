@@ -9,7 +9,7 @@ define([
       '<div class="panel panel-info">'
       , '<div class="panel-heading">'
         , '<h3 class="panel-title">'
-          , '<%= name %> = <%= countryCode %>'
+          , '<%= name %> - <%= countryCode %>'
         , '</h3>'
       , '</div>'
       , '<div class="panel-body">'
@@ -20,7 +20,7 @@ define([
 
     Templates['day'] = [
       '<div>'
-      , '<img src="<%= icon_url %>" alt="" class="img-thumnail"'
+      , '<img src="<%= icon_url %>" alt="" class="img-thumnail" />'
       , '<br /><%= conditions %>'
     , '</div>'
     ].join('');
