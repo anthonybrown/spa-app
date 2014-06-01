@@ -12,7 +12,7 @@ A course on developing a JS application using Backbone, Underscore, Bootstrap, R
 
 ####FTW Backbone is awesome for RESTapi's
 
-###*To load in some countries, type in console*###
+###**To load in some countries, type in console**###
 
 `debug.places.create({countryCode: 'PL', name: 'Krakow'});`
 
