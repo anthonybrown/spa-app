@@ -33,8 +33,6 @@ define([
           this.appView.setPage('home');
       }
 
-
     });
-
     return Router;
 });

@@ -68,6 +68,7 @@ define([
       }
 
     , render: function () {
+
         this.$el.css('background-color', this.model.get('backgroundColor'));
         this.$('.navbar-text').html(this.model.get('welcomeMessage'));
 
@@ -77,7 +78,7 @@ define([
     , setPage: function (page) {
         this.$('.nav li').removeClass('active');
         this.$('.page-view').hide();
-        this.$('#page-'+page).show();
+        this.$('#page-'+ page).show();
         this.$('#nav-' + page).addClass('active');
     }
 
@@ -85,4 +86,3 @@ define([
 
   return AppView;
 });
-

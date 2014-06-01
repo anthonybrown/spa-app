@@ -20,12 +20,12 @@ body {
 
 #app-view {
   padding: 1.7em 0 0 0;
-  min-width: 320px;
+  min-width: 370px;
   background-color: rgba(203, 215, 198, .9);
 }
 
 #header {
-  marginL 0 1em 1em 1em;
+  margin: 0 1em 1em 1em;
 }
 
 #content {
@@ -74,11 +74,11 @@ body {
 }
 
 .panel {
-  width: 30%;
-  max-width: 400px;
-  min-width: 220px;
+  width: 25%;
+  max-width: 280px;
+  min-width: 270px;
   float: left;
-  margin-right: 1.7em;
+  margin-right: 2em;
 }
 /* last-child is not working as expected */
   /*.panel:last-child {
