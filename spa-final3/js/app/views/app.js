@@ -71,13 +71,17 @@ define([
       , render: function () {
           this.$el.css('background-color', this.model.get('backgroundColor'));
           this.$('.navbar-text').html(this.model.get('welcomeMessage'));
+
+          var tempType = this.model.get('celsius') ? 'celsius' : 'fahrenheit';
+          this.$el.removeClass('celsius fahrenheit');
+          this.$el.addClass(tempType);
           return this;
       }
       , openSettings: function (e) {
             var modal = new SettingsView({
-                title: 'Application Settings'
-              , id: 'modal-settings'
-              , model: this.model
+                title : 'Application Settings'
+              , id    : 'modal-settings'
+              , model : this.model
             });
             modal.show();
       }
