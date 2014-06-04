@@ -37,6 +37,9 @@ body {
   .page-view > h3 {
     margin-left: 2em;
   }
+  .page-view > p {
+    margin-left: 2.7em;
+  }
 
 
 
@@ -70,15 +73,17 @@ body {
 }
 
 #places-list {
+  width: 100%;
+  margin: 0 auto;
   padding: 2em;
 }
 
 .panel {
-  width: 25%;
-  max-width: 270px;
+  width: 33%;
+  max-width: 320px;
   min-width: 270px;
   float: left;
-  margin-right: 2em;
+  margin-left: 1.17em;
 }
 /* last-child is not working as expected */
   /*.panel:last-child {

@@ -19,10 +19,13 @@ define([
     ].join('');
 
     Templates['day'] = [
-      '<div>'
-      , '<img src="<%= icon_url %>" alt="" class="img-thumnail" />'
-      , '<br /><%= conditions %>'
-    , '</div>'
+        '<div class="forecast-day">'
+        , '<h3><%= weekday %></h3>'
+        , '<img src="<%= icon_url %>" alt="" class="img-thumbnail" />'
+        , '<p class="forecast-fahr"><%= lowFahrenheit %>&deg;F - <%= highFahrenheit %>&deg;F</p>'
+        , '<p class="forecast-cel"><%= lowCelsius %>&deg;C - <%= highCelsius %>&deg;C</p>'
+        , '<div class="forecast-conditions"><%= conditions %></div>'
+      , '</div>'
     ].join('');
 
     Templates['modal'] = [
