@@ -2,9 +2,10 @@ define([
     'jquery'
   , 'underscore'
   , 'backbone'
+  , 'app/collections/places'
   , 'app/templates'
   , 'app/collections/days'
-], function ($, _, Backbone, Templates, DaysCollection) {
+], function ($, _, Backbone, PlacesCollection, Templates, DaysCollection) {
     'use strict';
 
     var PlaceView = Backbone.View.extend({

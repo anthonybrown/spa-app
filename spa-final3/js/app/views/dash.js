@@ -14,7 +14,7 @@ define([
           '<h3>Dashboard page</h3>'
         , '<div id="places-list" class="clearfix">Loading...</div>'
         , '<div id="dash-buttons">'
-          , '<button id="btn-add-new" type="button" class="btn btn-default">Add New</button>'
+          , '<button id="btn-add-new" type="button" class="btn btn-primary">Add New</button>'
         , '</div>'
       ].join('')
 
@@ -30,7 +30,7 @@ define([
           this.$dashButtons = this.$('#dash-buttons');
 
           this.collection = new PlacesCollection([]);
-          this.listenTo(this.collection, 'change', this.render);
+          this.listenTo(this.collection, 'change destroy', this.render);
           this.collection.fetch();
 
           window.debug = {
@@ -85,4 +85,3 @@ define([
 
     return DashView;
 });
-

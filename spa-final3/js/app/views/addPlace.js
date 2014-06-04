@@ -17,7 +17,7 @@ define([
               , '<label for="nameInput">Place Name</label>'
               , '<input type="text" class="form-control" id="nameInput" placeholder="Enter the Name of Place" />'
             , '</div>'
-            , '<div id="btn-add" class="btn btn-default">Submit</div>'
+            , '<div id="btn-add" class="btn btn-info">Submit</div>'
           , '</form>'
         ].join('')
 
