@@ -32,7 +32,7 @@ body {
 }
 
 .page-view {
-  padding: 1.75em 0;
+  padding: 1.7em 0;
 }
   .page-view > h3 {
     margin-left: 2em;
@@ -46,6 +46,13 @@ body {
 /** ====================================================================================/
  *  Misc Styles
  * ====================================================================================*/
+
+#places-list {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 
 .panel-info > .panel-heading {
   background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
@@ -72,11 +79,6 @@ body {
   text-shadow: -1px -1px 0 #06366d;
 }
 
-#places-list {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2em;
-}
 
 .panel {
   width: 33%;
