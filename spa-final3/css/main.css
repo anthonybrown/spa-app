@@ -47,11 +47,11 @@ body {
  *  Misc Styles
  * ====================================================================================*/
 
-#places-list {
+/*#places-list {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-}
+}*/
 
 
 .panel-info > .panel-heading {
@@ -79,16 +79,41 @@ body {
   text-shadow: -1px -1px 0 #06366d;
 }
 
-
-.panel {
+#places-list .panel {
   width: 33%;
   max-width: 320px;
   min-width: 270px;
   float: left;
-  margin-left: 1.17em;
+  margin-right: 1.17em;
 }
-/* last-child is not working as expected */
-  /*.panel:last-child {
-    margin-right: 0;
-  }*/
+
+/** ====================================================================================/
+ *  Forecast Days Styles
+ * ====================================================================================*/
+
+.forecast-day {
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 267px;
+  float: left;
+  margin-left: .5em;
+  margin-bottom: 1em;
+}
+
+.forecast-day img {
+  float: left;
+  margin: 1em;
+}
+
+.forecast-day p {
+  font-size: 26px;
+}
+
+.celsius .forecast-day .forecast-fahr {
+  display: none;
+}
+
+.fahrenheit .forecast-day .forecast-cel {
+  display: none;
+}
 

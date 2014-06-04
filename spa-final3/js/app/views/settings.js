@@ -8,6 +8,7 @@ define([
     'use strict';
 
     var SettingsView = ModalView.extend({
+
         template: Templates['settings']
 
       , events: {
@@ -19,9 +20,9 @@ define([
       }
       , saveSettings: function (e) {
             var data = {
-                welcomeMessage: this.$('#welcomeMessageInput').val()
-              , backgroundColor: this.$('#backgroundColorInput').val()
-              , celsius: this.$('#tempType').val() === 'cel' ? true : false
+                welcomeMessage  : this.$('#welcomeMessageInput').val()
+              , backgroundColor : this.$('#backgroundColorInput').val()
+              , celsius         : this.$('#tempType').val() == 'cel' ? true : false
             };
 
         this.model.save(data);
