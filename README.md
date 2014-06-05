@@ -1,6 +1,6 @@
 # SPA application with Backbone and Require
 
-A course on developing a JS application using Backbone, Underscore, Bootstrap, Require and QUnit for clientside tests
+A [course](http://courses.tutsplus.com/courses/building-javascript-web-apps) on developing a JS application using Backbone, Underscore, Bootstrap, Require and QUnit for clientside tests
 
 > works with Backbone v 1.0.0
 
